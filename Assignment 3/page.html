@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8"/>
+        <title>Yin Yang Tool</title>
+        <link rel='icon' href='icon.png'/>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+        <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script> -->
+        <!-- <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script> -->
+        <link rel='stylesheet' href='style.css'/>
+        
+    </head>
+    <body>
+        <h2>Yin Yang Example</h2>
+
+        <!-- the image -->
+        <div class="center">
+            <img id='yin' class="img" src='yin_yang.jpg'/>
+        </div>
+        
+
+        <br>
+        <br>
+
+        <!-- div holding the canvas -->
+        <div id="canvas-cont" class="canv-cont">
+            <canvas id="myCanvas" width="726" height="726">
+            </canvas>
+        </div>
+        
+
+        <br>
+        <br>
+
+        <!-- div holding the buttons for controlling the image -->
+        <p>Buttons for controlling canvas</p>
+        <div class="flex-cont">
+            <button type="button" class="btn btn-primary flex-item" onclick="drawImg()"> Draw image!</button>
+            <button type="button" class="btn btn-primary flex-item" onclick="useRotate('cw')"> Click to rotate clockwise!</button>
+            <button type="button" class="btn btn-primary flex-item" onclick="useRotate('acw')"> Click to rotate anti-clockwise!</button>
+            <button type="button" class="btn btn-primary flex-item" onclick="freeze()"> Click to freeze it!</button>
+            <button type="button" class="btn btn-primary flex-item" onclick="deleteCanvas()"> Click to clear/reset it!</button>
+        </div>
+        <script src="javascript.js"></script>
+    </body>
+    
+</html>
+
